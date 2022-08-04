@@ -17,8 +17,8 @@ gulp.task('sass', getTaskBuild('sass'));
 gulp.task('sass:watch', getTaskWatch('sass'));
 
 // SVG sprite tasks
-gulp.task('sprite', getTaskBuild('sprite'));
-gulp.task('sprite:watch', getTaskWatch('sprite'));
+// gulp.task('sprite', getTaskBuild('sprite'));
+// gulp.task('sprite:watch', getTaskWatch('sprite'));
 
 // Copy files tasks
 gulp.task('copy', getTaskBuild('copy'));
@@ -45,15 +45,15 @@ const setmodeDev = (done) => {
 };
 
 // Build (production) task
-gulp.task('build', gulp.series(setmodeProd, 'clean', 'sass', 'js', 'sprite', 'copy', 'pug'));
+gulp.task('build', gulp.series(setmodeProd, 'clean', 'sass', 'js', 'copy', 'pug'));
 
 // Build (development) task
-gulp.task('build:dev', gulp.series(setmodeDev, 'clean', 'sass', 'js', 'sprite', 'copy', 'pug'));
+gulp.task('build:dev', gulp.series(setmodeDev, 'clean', 'sass', 'js', 'copy', 'pug'));
 
 // Watch task
 gulp.task(
   'watch',
-  gulp.parallel('copy:watch', 'pug:watch', 'sass:watch', 'js:watch', 'sprite:watch')
+  gulp.parallel('copy:watch', 'pug:watch', 'sass:watch', 'js:watch')
 );
 
 // Default task

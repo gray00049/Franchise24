@@ -6,8 +6,8 @@ gulp.task('copy:img', () =>
   gulp
     .src([
       `${config.src.img}/**/*.{jpg,png,jpeg,svg,gif}`,
-      `!${config.src.iconsMono}/**/*.*`,
-      `!${config.src.iconsMulti}/**/*.*`,
+      // `!${config.src.iconsMono}/**/*.*`,
+      // `!${config.src.iconsMulti}/**/*.*`,
     ])
     .pipe(gulp.dest(config.dest.img))
 );

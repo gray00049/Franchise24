@@ -1,0 +1,87 @@
+@import ../_variable.sass
+
+.header
+  position: fixed;
+  left: 0
+  top: 0
+  bottom: 0
+  width: 120px
+  cursor: pointer
+  &__view
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    height: 100%
+    padding: 40px 50px 90px
+    background: #fff
+    border-right: 3px solid #F6F6F6;
+    z-index: 10
+    user-select: none
+  &__title  
+    font-weight: 900
+    font-size: 16px
+    line-height: 19px
+    transform: rotate(-90deg)
+    color: $text-color
+  &__next-block
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+    color: $text_color
+    transform: rotate(-90deg)
+    text-decoration: none
+    white-space: nowrap
+    transition: all .3s
+    img 
+      margin-right: 40px
+      transform: rotate(90deg)
+  &__close-btn
+    display: none
+  &__inner
+    position: fixed
+    top: 0
+    left: -710px
+    bottom: 0
+    width: 710px
+    padding: 90px 70px
+    background: #fff
+    box-shadow: $shadow
+    transition: left .6s
+    z-index: 5
+    .header__view
+      width: 120px
+  &.open 
+    .header__inner
+      left: 120px
+    .header__view
+      .header__next-block
+        opacity: 0
+    .header__close-btn
+      display: block
+    .header__title
+      display: none
+  &__menu
+    list-style-type: none
+    padding: 0
+    margin-bottom: 90px
+  &__menu-link
+    padding-bottom: 4px
+    text-decoration: none
+    color: $text-color
+    font-weight: 400
+    font-size: 30px
+    line-height: 36px
+  &__menu-item
+    margin-bottom: 34px
+    &.active .header__menu-link
+      border-bottom: 3px solid #E21D1D
+  &__trigger-link
+    color: $text_color
+    font-size: 30px
+    line-height: 36px
+    font-weight: 900
+    text-decoration: none
+    img
+      margin-left: 15px

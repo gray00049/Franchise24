@@ -1,0 +1,28 @@
+//- header.pug
+.header
+  .header__view 
+    a.header__logo(href="#")
+      img(src="img/logo.svg", alt="site`s logo")
+    p.header__title Меню
+    img.header__close-btn(src="img/close-icon.svg", alt="close header menu")
+    a.header__next-block 
+      img(src="img/header_arrow.svg", alt="arrow")
+      |Кейсы
+  .header__inner
+    ul.header__menu 
+      li.header__menu-item
+        a.header__menu-link(href="#") Кейсы
+      li.header__menu-item.active
+        a.header__menu-link(href="#") Инструменты
+      li.header__menu-item
+        a.header__menu-link(href="#") Процесс
+      li.header__menu-item
+        a.header__menu-link(href="#") Тарифы
+      li.header__menu-item
+        a.header__menu-link(href="#") Отзывы
+      li.header__menu-item
+        a.header__menu-link(href="#") Контакты
+      li.header__menu-item
+        a.header__menu-link(href="#") Блог
+    a.header__trigger-link Подготовка
+      img(src="img/header_logo_bold.svg", alt="trigger-arrow")
