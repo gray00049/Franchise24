@@ -8,3 +8,23 @@ document.addEventListener('DOMContentLoaded', () => {
 function toggleHeader() {
   document.querySelector('.header').classList.toggle('open');
 }
+
+new Glider(document.querySelector('.slider__inner'), {
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  draggable: true,
+  arrows: {
+    prev: '#prev-slide-1',
+    next: '#next-slide-1'
+  }
+});
+
+new Glider(document.querySelector('.feedback-slider'), {
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  draggable: true,
+  arrows: {
+    prev: '#prev-slide-2',
+    next: '#next-slide-2'
+  }
+});

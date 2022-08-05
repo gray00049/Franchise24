@@ -1,0 +1,62 @@
+@import ../_variable.sass
+
+.example
+  padding-top: 65px
+  padding-bottom: 120px
+  &__title
+    font-size: 34px
+    line-height: 40px
+    b
+      font-weight: 900
+  &-item
+    display: flex
+    margin-top: 120px
+    &__text
+      width: 629px
+      padding: 49px 123px 49px 32px
+    &__title
+      margin-bottom: 20px
+      font-size: 40px
+      line-height: 47px
+      color: $text_color
+      font-weight: 600
+    &__descr
+      margin-bottom: 0
+      color: $gray
+      font-size: 18px
+      line-height: 21px
+    &__logo
+      position: relative
+      z-index: -1
+      flex-grow: 1
+      background: $lightgray
+      img
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+      &::before
+        content: ''
+        position: absolute
+        width: 123px
+        height: 3px
+        background: $red
+        top: 50%
+        left: -61px
+        transform: tranlate(-50%)
+    &__read-more
+      color: $gray
+      font-size: 18px
+      line-height: 21px
+      border-bottom: 1px solid $gray
+      transition: all .3s
+      &:hover
+        color: darken($gray, 15%)
+        border-color: darken($gray, 15%)
+    &:nth-child(2n+1)
+      flex-direction: row-reverse
+      .example-item__text
+        padding: 49px 32px 49px 123px
+      .example-item__logo::before
+        left: auto
+        right: -61px

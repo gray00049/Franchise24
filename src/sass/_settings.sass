@@ -1,5 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap')
+
+@import _variable.sass
   
 body 
   height: 100vh
   font-family: 'Roboto', sans-serif
+  overflow-x: hidden 
+  padding-left: 120px
+
+a
+  color: $red
+  transition: color .3s
+  text-decoration: none
+  &:hover
+    color: $hover_red
+
+.red-button
+  display: block
+  padding: 15px 32px
+  background: $red
+  font-size: 17px
+  line-height: 20px
+  font-weight: 600
+  text-align: center
+  color: #fff
+  transition: all .3s
+  border-radius: 2px
+  &:hover
+    background: $hover_red
+    color: #fff
+
+.container 
+  margin: 0
+  padding: 0 120px
