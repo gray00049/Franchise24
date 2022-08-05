@@ -1,0 +1,38 @@
+@import _variable.sass
+
+.clients
+  padding-bottom: 160px
+  &__title
+    margin-bottom: 20px
+    font-weight: 900
+    font-size: 60px
+    line-height: 71px
+    color: $text_color
+  &__descr
+    max-width: 813px
+    margin-bottom: 40px
+    font-size: 20px
+    line-height: 28px
+    color: $text_color
+    opacity: 0.8
+  &-logo
+    display: flex
+    flex-wrap: wrap
+  .client
+    width: 25%
+    height: 92px
+    filter: grayscale(1)
+    transition: all .4s
+    border-bottom: 3px solid $lightgray
+    border-right: 3px solid $lightgray
+    &:nth-child(4n)
+      border-right: 0
+    &:nth-child(20),
+    &:nth-child(19),
+    &:nth-child(18),
+    &:nth-child(17)
+      border-bottom: 0
+    img 
+      max-height: 100%
+    &:hover
+      filter: grayscale(0)

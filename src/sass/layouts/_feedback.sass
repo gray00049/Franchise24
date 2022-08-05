@@ -10,10 +10,25 @@
     b
       font-weight: 900
   &-slide
-    background: $lightgray
-    text-align: center
-    color: $black
-    font-size: 150px
-    height: 364px
+    display: flex
+    justify-content: space-between
+    &__text
+      width: 814px
+      font-size: 20px
+      line-height: 28px
+      color: $text_color
+    &__user
+      flex-grow: 1
+    &__name
+      margin: 20px 0 4px
+      font-size: 18px
+      line-height: 21px
+      color: $text_color
+    &__post
+      font-size: 12px
+      line-height: 14px
+      text-transform: uppercase
+      color: $text_color
+
   .slider__button
     margin: 20px 20px 0 0
