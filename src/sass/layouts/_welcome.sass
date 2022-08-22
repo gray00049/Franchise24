@@ -15,11 +15,14 @@
     font-size: 198px
     z-index: -2
   .title-row
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
     &__img
       width: 300px
     &__phone-link
       width: auto
-      margin-top: 60px
       padding: 6px 12px 6px 12px
       border: 1px solid #C7CED2
       border-radius: 2px
@@ -54,3 +57,151 @@
     font-size: 16px
     line-height: 19px
     color: $gray
+  &-start
+    .title-row
+      &__text
+        max-width: 771px
+        font-weight: 900
+        font-size: 60px
+        line-height: 71px
+        color: $text_color
+        text-transform: uppercase
+    .welcome__inner
+      display: block
+      padding-bottom: 120px
+    .welcome__subtitle
+      max-width: 406px
+      margin-bottom: 30px
+  &-blog
+    .welcome__inner
+      padding-bottom: 0
+    &::after
+      display: none
+
+
+
+@media (max-width: 1200px)
+  .welcome
+    &::after
+      font-size: 150px
+    &-start
+      .title-row__text
+        max-width: 670px
+        font-size: 40px
+
+@media (max-width: 992px)
+  .welcome
+    &::after
+      content: 'Franc hise24'
+      text-align: center
+      top: 70%
+      font-size: 240px
+      line-height: 220px
+    .title-row__img
+      width: 220px
+    &__title
+      font-size: 50px
+    &__next-title
+      font-size: 45px
+    &-start
+      .title-row__text
+        max-width: 500px
+
+@media (max-width: 900px)
+  .welcome
+    &::after
+      font-size: 220px
+      line-height 220px
+
+@media (max-width: 800px)
+  .welcome
+    &::after
+      font-size: 200px
+      line-height: 200px
+
+@media (max-width: 768px)
+  .welcome
+    &::after
+      top: 50%
+      font-size: 220px
+      line-height: 200px
+    .title-row
+      display: none
+    &__inner
+      padding-top: 98px
+      grid-template-columns: 100%
+    &__title
+      font-size: 40px
+      line-height: 47px
+      margin-bottom: 32px
+      grid-column-start: 1
+      grid-column-end: 2
+    &__subtitle
+      margin-bottom: 32px
+    &__next-title
+      grid-column-start: 1
+      grid-column-end: 2  
+      grid-row-start: 3
+      grid-row-end: 4
+      font-size: 40px
+      line-height: 47px
+      margin-bottom: 32px
+    .red-button
+      width: 100%
+    &-start
+      .welcome__title
+        display: block
+
+@media (max-width: 674px)
+  .welcome
+    &::after
+      font-size: 200px
+      line-height: 200px
+      
+@media (max-width: 610px)
+  .welcome
+    &::after
+      font-size: 180px
+      line-height: 180px
+
+@media (max-width: 550px)
+  .welcome
+    &::after
+      top: 40%
+      font-size: 160px
+      line-height: 160px
+
+@media (max-width: 500px)
+  .welcome-start
+    .welcome__inner
+      padding-bottom: 80px
+  .welcome-blog
+    .welcome__inner
+      padding-bottom: 50px
+
+@media (max-width: 490px)
+  .welcome
+    &::after
+      top: 30%
+      font-size: 140px
+      line-height: 120px
+
+@media (max-width: 430px)
+  .welcome
+    &::after
+      font-size: 130px
+      line-height: 120px
+
+@media (max-width: 400px)
+  .welcome
+    &::after
+      content: 'Franс ise24'
+      font-size: 140px
+      line-height: 120px
+  
+@media (max-width: 350px)
+  .welcome
+    &::after
+      content: 'Franс ise24'
+      font-size: 120px
+      line-height: 120px

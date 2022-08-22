@@ -7,6 +7,7 @@
   bottom: 0
   width: 120px
   cursor: pointer
+  z-index: 100
   &__view
     position: relative
     display: flex
@@ -16,7 +17,7 @@
     height: 100%
     padding: 40px 50px 90px
     background: #fff
-    border-right: 3px solid #F6F6F6;
+    border-right: 3px solid #F6F6F6
     z-index: 10
     user-select: none
   &__title  
@@ -48,10 +49,14 @@
     padding: 90px 70px
     background: #fff
     box-shadow: $shadow
-    transition: left .6s
+    transition: all .6s
     z-index: 9
     .header__view
       width: 120px
+  &__menu-btn
+    display: none
+  & .red-block
+    display: none
   &.open 
     .header__inner
       left: 120px
@@ -84,3 +89,67 @@
     font-weight: 900
     img
       margin-left: 15px
+
+
+@media (max-width: 768px) 
+  .header
+    top: 0
+    left: 0
+    right: 0
+    bottom: auto
+    width: 100%
+    &__view
+      flex-direction: row
+      padding: 24px 30px
+    &__next-block
+      display: none
+    &__menu-btn
+      display: block
+    &__title
+      display: none
+    &__inner
+      left: 0
+      transform: translateY(-1500px)
+      width: 100%
+      height: calc(100vh - 79px)
+      padding: 20px 0
+      text-align: center
+    &__menu
+      margin-bottom: 40px
+    &__menu-link
+      margin-bottom: 40px
+      font-size: 24px
+      line-height: 28px
+    &__trigger-link
+      img
+        display: none
+    & .red-block
+      position: absolute
+      bottom: 0
+      display: block
+      width: 100%
+      text-align: center
+      padding: 40px
+      background: $red
+      color: #fff
+      &__title
+        margin-bottom: 15px
+        font-size: 20px
+        line-height: 23px
+      &__link 
+        font-weight: 900
+        font-size: 24px
+        line-height: 28px
+        color: #fff
+        &:hover
+          color: #fff
+    &.open
+      .header__inner
+        left: 0
+        transform: translateY(79px)
+        text-align: center
+      .header__menu-btn
+        display: none
+
+
+    

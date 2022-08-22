@@ -4,7 +4,6 @@
   padding-bottom: 120px
   &__title
     margin-bottom: 60px
-    padding-left: 120px
     font-size: 36px
     line-height: 42px
     color: $text_color
@@ -22,11 +21,13 @@
         font-size: 32px
         line-height: 38px
         font-weight: 700
+        color: $text_color
       &__title
         margin-bottom: 20px
         font-size: 24px
         line-height: 28px
         font-weight: 900
+        color: $text_color
       &__descr
         font-size: 18px
         line-height: 21px
@@ -38,11 +39,12 @@
           margin-bottom: 32px
           font-size: 64px
           line-height: 75px
+          color: $text_color
         .anim-step__title
           margin-bottom: 32px
           font-size: 48px
           line-height: 56px
-          font-weight: 900
+          color: $text_color
     #step1
       grid-column-start: 3
       grid-column-end: 5
@@ -73,3 +75,79 @@
       grid-column-end: 3
       grid-row-start: 5
       grid-row-end: 7
+
+
+@media (max-width: 1200px)
+  .animate-step__wrapper
+    grid-template-rows: repeat(6, 240px)
+    #step1
+      grid-column-start: 2
+      grid-column-end: 4
+      grid-row-start: 1
+      grid-row-end: 2
+    #step2
+      grid-column-start: 1
+      grid-column-end: 3
+      grid-row-start: 2
+      grid-row-end: 3
+    #step3
+      grid-column-start: 2
+      grid-column-end: 4
+      grid-row-start: 3
+      grid-row-end: 4
+    #step4
+      grid-column-start: 3
+      grid-column-end: 5
+      grid-row-start: 4
+      grid-row-end: 5
+    #step5
+      grid-column-start: 2
+      grid-column-end: 4
+      grid-row-start: 5
+      grid-row-end: 6
+    #step6
+      grid-column-start: 1
+      grid-column-end: 3
+      grid-row-start: 6
+      grid-row-end: 7
+
+    .anim-step:nth-child(1),
+    .anim-step:nth-child(6)
+        padding: 20px
+        .anim-step__number
+          margin-bottom: 20px
+          font-size: 32px
+          line-height: 38px
+          font-weight: 700
+          color: $text_color
+        .anim-step__title
+          margin-bottom: 20px
+          font-size: 24px
+          line-height: 28px
+          font-weight: 900
+          color: $text_color
+
+@media (max-width: 992px)
+  .animate-step__wrapper
+    grid-template-rows: repeat(6, 350px)
+
+@media (max-width: 768px)
+  .animate-step
+    padding-bottom: 80px
+    &__title
+      font-size: 28px
+      line-height: 30px
+    &__wrapper
+      width: 540px
+      max-width: 100%
+      padding: 0 12px
+      margin: 0 auto
+      display: block
+    .anim-step
+      margin-top: 20px
+
+@media (max-width: 380px)
+  .animate-step
+    &__title
+      font-size: 24px
+      line-height: 28px

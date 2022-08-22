@@ -1,0 +1,49 @@
+@import ../_variable.sass
+
+.blog
+  padding: 120px 0
+  background: url('../img/blog_bg.jpg') no-repeat center / cover
+  color: #fff
+  &__trigger
+    display: flex
+    justify-content: space-between
+  &__breadcrums
+    margin-bottom: 16px
+    font-size: 18px
+    line-height: 21px
+  &__title
+    width: 643px
+    margin-bottom: 20px
+    font-weight: 900
+    font-size: 60px
+    line-height: 71px
+  &__descr
+    margin-bottom: 0
+    width: 643px
+    font-size: 18px
+    line-height: 21px
+  .red-button
+    padding: 18px 47px
+    font-size: 20px
+    line-height: 28px
+
+
+@media (max-width: 1400px)
+  .blog__descr
+    width: 590px
+
+@media (max-width: 1200px)
+  .blog__trigger
+    align-items: start
+
+  .blog .red-button
+    width: 275px
+    padding: 18px 20px
+
+@media (max-width: 992px)
+  .blog__descr
+    width: 320px
+
+@media (max-width: 768px)
+  .blog
+    display: none

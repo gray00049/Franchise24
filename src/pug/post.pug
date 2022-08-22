@@ -1,0 +1,73 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css", 
+         rel="stylesheet",
+         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx",
+         crossorigin="anonymous")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.css", integrity="sha512-YM6sLXVMZqkCspZoZeIPGXrhD9wxlxEF7MzniuvegURqrTGV2xTfqq1v9FJnczH+5OGFl5V78RgHZGaK34ylVg==", crossorigin="anonymous", referrerpolicy="no-referrer")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
+    link(rel="stylesheet", href="css/main.min.css")
+    title Вот такой путь мы проделаем в вашем бизнес
+    // Header
+    include ./layouts/_header.pug
+
+    main 
+      // Welcome block
+      include ./layouts/_post-welcome.pug
+
+      .article.container-md
+        p.article__title Вот такой путь мы проделаем в вашем бизнес 
+        p.article__date 24 июля 2022 / 8 минут назад 
+        .article__img(style="background: url(img/posts/post-img.jpg) no-repeat center / cover", alt="post img")
+        .article__content
+          
+          p.article__date.article__date--mobile 24 июля 2022 / 8 минут назад 
+          p.article__title.article__title--mobile Вот такой путь мы проделаем в вашем бизнес 
+
+          p Este é o terceiro post de uma série dedicada ao metaverso. É muito melhor começar lendo o primeiro [aqui: <a href="#">bit.ly/3yTWa3g</a>], que tem um link pro segundo [<a href="#">bit.ly/3IFX5aU</a>] e depois ler este aqui.
+          br
+          br
+          h3 Há sinais do metaverso? Onde?
+          p Desde que a conversa sobre o metaverso virou assunto de mesa de bar, festa de família, depois de um certo CEO dizer que sua rede social era, já, um deles, o metaverso começou a aparecer em todo canto. Até telecirurgia, agora, “é” um caso de uso do metaverso. Mesmo?
+          br
+          br
+          p A ideia de cirurgias remotas é da década de 1970, quando a NASA se perguntava como seria possível realizar uma cirurgia em astronautas numa missão espacial. E tal tipo de procedimento existe desde 2001 -quando a internet era quase discada-, e os pioneiros, em New York, operaram uma paciente em Strasbourg [veja <a href="#">bit.ly/3ObA3JP</a>]. Desde meados da década passada, times de todo mundo realizam o procedimento como se estivessem na mesma sala do paciente, mas estão a centenas ou milhares de quilômetros de distância.
+          img(src="img/posts/post-img-2.jpg", alt="post img")
+          p Desde que a conversa sobre o metaverso virou assunto de mesa de bar, festa de família, depois de um certo CEO dizer que sua rede social era, já, um deles, o metaverso começou a aparecer em todo canto. Até telecirurgia, agora, “é” um caso de uso do metaverso. Mesmo?
+          img(src="img/posts/post-img-3.jpg", alt="post img")
+          p Desde que a conversa sobre o metaverso virou assunto de mesa de bar, festa de família, depois de um certo CEO dizer que sua rede social era, já, um deles, o metaverso começou a aparecer em todo canto. Até telecirurgia, agora, “é” um caso de uso do metaverso. Mesmo?
+          br
+          br
+          p A ideia de cirurgias remotas é da década de 1970, quando a NASA se perguntava como seria possível realizar uma cirurgia em astronautas numa missão espacial. E tal tipo de procedimento existe desde 2001 -quando a internet era quase discada-, e os pioneiros, em New York, operaram uma paciente em Strasbourg [veja <a href="#">bit.ly/3ObA3JP</a>]. Desde meados da década passada, times de todo mundo realizam o procedimento como se estivessem na mesma sala do paciente, mas estão a centenas ou milhares de quilômetros de distância.
+          br
+          br
+          p Desde que a conversa sobre o metaverso virou assunto de mesa de bar, festa de família, depois de um certo CEO dizer que sua rede social era, já, um deles, o metaverso começou a aparecer em todo canto. Até telecirurgia, agora, “é” um caso de uso do metaverso. Mesmo?
+          br
+          br
+          p A ideia de cirurgias remotas é da década de 1970, quando a NASA se perguntava como seria possível realizar uma cirurgia em astronautas numa missão espacial. E tal tipo de procedimento existe desde 2001 -quando a internet era quase discada-, e os pioneiros, em New York, operaram uma paciente em Strasbourg [veja <a href="#">bit.ly/3ObA3JP</a>]. Desde meados da década passada, times de todo mundo realizam o procedimento como se estivessem na mesma sala do paciente, mas estão a centenas ou milhares de quilômetros de distância.
+          q “Desde que a conversa sobre o metaverso virou assunto de mesa de bar, festa de família, depois de um certo CEO dizer que sua rede social era, já, um deles, o metaverso começou a aparecer em todo canto. Até telecirurgia, agora, “é” um caso de uso do metaverso. Mesmo?”
+
+        .article-creator
+          img.article-creator__img(src="img/posts/creator.jpg")
+          .article-creator__text 
+            p.article-creator__name Лариса Фирстова
+            p.article-creator__post Основатель и Директор детского сада "AltynSara", Нур-Султан 
+      
+
+      // Read more block
+      include ./layouts/_read-more.pug
+
+    // Footer
+    include ./layouts/_footer.pug
+
+    // Form block
+    include ./layouts/_modal.pug
+
+
+    script(src="js/slider.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/imask/6.4.2/imask.min.js")
+    script(src="js/main.min.js") 

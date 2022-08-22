@@ -15,6 +15,8 @@
   &__control-btn
     display: flex
     flex-wrap: nowrap
+  &__mobile-control
+    display: none
   &__button
     width: 71px
     height: 71px
@@ -25,8 +27,8 @@
   &__inner
     padding-left: 120px
   .slide
-    max-width: 330px
     margin-right: 46px
+    text-align: center
     img
       max-height: 382px
       margin-bottom: 20px 
@@ -36,8 +38,46 @@
       font-size: 18px
       line-height: 21px
       color: $text_color
+      text-align-last: left
     &__text
       font-size: 18px
       line-height: 21px
       color: $text_color
       opacity: 0.8
+      text-align: left
+
+
+@media (max-width: 1200px)
+  .slider__inner
+    padding-left: 40px
+
+@media (max-width: 768px)
+  .slider
+    padding: 60px 0
+    &__title
+      font-size: 28px
+      line-height: 30px
+
+@media (max-width: 450px)
+  .slider
+    padding: 60px 0 150px
+    & .slider__control-btn
+      position: absolute
+      top: 650px
+      left: 0
+
+@media (max-width: 380px)
+  .slider
+    &__title
+      font-size: 24px
+      line-height: 28px
+    .slide
+      &__title
+        margin-bottom: 4px
+      &__text
+        font-size: 14px
+        line-height: 16px
+    & .slider__control-btn
+      position: absolute
+      top: 520px
+      left: 0

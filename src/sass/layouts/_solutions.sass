@@ -1,0 +1,70 @@
+@import ../_variable.sass
+
+.solutions
+  padding-bottom: 120px
+  &__title
+    margin-bottom: 20px
+    font-weight: 700
+    font-size: 36px
+    line-height: 42px
+    color: $text_color
+  &__subtitle
+    max-width: 538px
+    margin-bottom: 60px
+    font-size: 18px
+    line-height: 21px
+    color: $text_color
+  &__row
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &-item
+    width: 48%
+    padding: 30px
+    background: $lightgray
+    border: 1px solid #F6F6F6
+    &__title
+      margin-bottom: 20px
+      font-size: 36px
+      line-height: 42px
+      color: $red
+    &__list
+      p
+        margin-bottom: 10px
+        padding-left: 23px
+        font-size: 18px
+        line-height: 21px
+        color: $text_color
+        &::before
+          content: '—'
+          position: absolute
+          left: 0
+
+
+@media (max-width: 992px)
+  .solutions-item
+    width: 100%
+    margin-bottom: 20px
+    background: none
+    padding: 0
+
+@media (max-width: 500px)
+  .solutions
+    padding-bottom: 80px
+    &__title
+      margin-bottom: 20px
+      font-size: 24px
+      line-height: 28px
+    &__subtitle
+      margin-bottom: 40px
+      font-size: 16px
+      line-height: 19px
+    &-item
+      &__title
+        margin-bottom: 20px
+        font-size: 20px
+        line-height: 23px
+      &__list p
+        margin-bottom: 10px
+        font-size: 14px
+        line-height: 16px

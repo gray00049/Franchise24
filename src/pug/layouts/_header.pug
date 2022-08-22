@@ -5,24 +5,28 @@
       img(src="img/logo.svg", alt="site`s logo")
     p.header__title Меню
     img.header__close-btn(src="img/close-icon.svg", alt="close header menu")
+    img.header__menu-btn(src="img/menu-icon.svg", alt="open header menu")
     a.header__next-block 
       img(src="img/header_arrow.svg", alt="arrow")
       |Кейсы
   .header__inner
     ul.header__menu 
       li.header__menu-item
-        a.header__menu-link(href="#") Кейсы
+        a.header__menu-link(href="#case") Кейсы
       li.header__menu-item.active
-        a.header__menu-link(href="#") Инструменты
+        a.header__menu-link(href="#instr") Инструменты
       li.header__menu-item
-        a.header__menu-link(href="#") Процесс
+        a.header__menu-link(href="#process") Процесс
       li.header__menu-item
-        a.header__menu-link(href="#") Тарифы
+        a.header__menu-link(href="#tariffs") Тарифы
       li.header__menu-item
-        a.header__menu-link(href="#") Отзывы
+        a.header__menu-link(href="#feedbacks") Отзывы
       li.header__menu-item
-        a.header__menu-link(href="#") Контакты
+        a.header__menu-link(href="#contacts") Контакты
       li.header__menu-item
-        a.header__menu-link(href="#") Блог
+        a.header__menu-link(href="http://localhost:3000/blog") Блог
     a.header__trigger-link(href="#") Подготовка
       img(src="img/header_logo_bold.svg", alt="trigger-arrow")
+    .red-block.trigger-block
+      p.red-block__title Обсудить задачу
+      a.red-block__link +7 701 101 7059

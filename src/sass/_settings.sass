@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap')
 
 @import _variable.sass
+
+main * 
+  position: relative
+  z-index: 1
   
 body 
   height: 100vh
@@ -26,10 +30,13 @@ a
   color: #fff
   transition: all .3s
   border-radius: 2px
+  border: none
   &:hover
     background: $hover_red
     color: #fff
 
-.container 
-  margin: 0
-  padding: 0 120px
+
+@media (max-width: 768px)
+  body
+    padding-top: 79px
+    padding-left: 0

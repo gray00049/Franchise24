@@ -1,0 +1,21 @@
+//- Modal block
+
+.modal
+  .modal__background.modal-trigger
+  .modal__inner 
+    form.modal__form
+      input.modal__input(type="text", placeholder="Имя")
+      input.modal__input(type="text", placeholder="Отрасль бизнеса")
+      input.modal__input#phone(type="tel")
+      input.modal__input#email(type="email", placeholder="Электронная почта")
+      button.modal__btn Отправить запрос
+    .modal__text 
+      p.modal__title Оставьте свои контактные данные
+      p.modal__subtitle и мы свяжемся с вами в ближайшее время
+      p.modal__copyright Нажимая кнопку “Отправить запрос”, вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a>
+    .modal__close-btn.modal-trigger
+      <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M27.7705 0.833008L15.6589 12.9447L3.54719 0.833008L0.492188 3.88801L12.6039 15.9997L0.492188 28.1113L3.54719 31.1663L15.6589 19.0547L27.7705 31.1663L30.8255 28.1113L18.7139 15.9997L30.8255 3.88801L27.7705 0.833008Z" fill="white"/>
+      </svg>
+
+      

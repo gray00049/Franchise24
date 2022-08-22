@@ -11,32 +11,29 @@ html(lang="ru")
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.css", integrity="sha512-YM6sLXVMZqkCspZoZeIPGXrhD9wxlxEF7MzniuvegURqrTGV2xTfqq1v9FJnczH+5OGFl5V78RgHZGaK34ylVg==", crossorigin="anonymous", referrerpolicy="no-referrer")
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
     link(rel="stylesheet", href="css/main.min.css")
-    title Franchise24
-  body
+    title Подготовка бизнеса к запуску франшизы
+  body 
     // Header
     include ./layouts/_header.pug
 
     main 
       // Welcome block
-      include ./layouts/_welcome.pug
+      include ./layouts/_start-welcome.pug
 
-      // Example block
-      include ./layouts/_example.pug
+      // Matrix block
+      include ./layouts/_matrix.pug
 
-      // Steps block
-      include ./layouts/_steps.pug
+      // Solutions block
+      include ./layouts/_solutions.pug
 
-      // Slider block
-      include ./layouts/_slider.pug
+      // Trigger block
+      include ./layouts/_trigger.pug
 
-      // Animate step block
-      include ./layouts/_animate-step.pug
-
-      // Tariff block
-      include ./layouts/_tariff.pug
-
-      // Feedback block
-      include ./layouts/_feedback.pug
+      // Results block
+      include ./layouts/_results.pug
+    
+      // Results block
+      include ./layouts/_stat.pug
 
       // Clients block
       include ./layouts/_clients.pug
@@ -52,6 +49,8 @@ html(lang="ru")
 
     // Form block
     include ./layouts/_modal.pug
+
+
 
 
     script(src="js/slider.min.js")

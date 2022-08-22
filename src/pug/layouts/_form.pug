@@ -1,0 +1,16 @@
+//- Form block
+
+.form
+  .container.form__wrapper
+    .form__text 
+      p.form__title Давайте знакомиться
+        br
+        img(src="img/form_arrow.svg", alt="arrow")
+      p.form__descr Нажимая кнопку “Отправить запрос”, вы соглашаетесь с условиями Политики конфиденциальности
+      a.form__link(href="mailto:hello@franchise24.kz") hello@franchise24.kz
+    form.form__form 
+      input.form__input(type="text", placeholder="Имя")
+      input.form__input(type="text", placeholder="Отрасль бизнеса")
+      input.form__input#phone(type="tel")
+      input.form__input#email(type="email", placeholder="Электронная почта")
+      button.form__submit Отправить запрос

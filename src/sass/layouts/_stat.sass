@@ -1,0 +1,68 @@
+@import ../_variable.sass
+
+.stat
+  padding-bottom: 120px
+  &__title
+    margin-bottom: 40px
+    font-weight: 900
+    font-size: 36px
+    line-height: 42px
+    color: $text_color
+  &__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &-item
+    width: 48%
+    height: 269px
+    margin-bottom: 20px
+    text-align: right
+    background: $lightgray
+    &__inner
+      position: absolute
+      bottom: 30px
+      right: 30px
+    &__count
+      margin-bottom: 30px
+      font-size: 48px
+      line-height: 56px
+      color: $red
+    &__descr
+      max-width: 324px
+      margin-bottom: 0
+      font-size: 20px
+      line-height: 23px
+      color: $text_color
+      opacity: 0.8
+
+
+@media (max-width: 992px)
+  .stat
+    &-item
+      width: 100%
+      height: auto
+      padding: 30px
+      &__inner
+        position: relative
+        bottom: auto
+        right: auto
+      &__count
+        margin-bottom: 10px
+      &__descr
+        margin-left: auto
+
+@media (max-width: 500px)
+  .stat
+    padding-bottom: 80px
+    &__title
+      font-size: 24px
+      line-height: 28px
+    &-item
+      &__count
+        margin-bottom: 10px
+        font-size: 48px
+        line-height: 56px 
+      &__descr
+        font-size: 14px
+        line-height: 16px
+        
